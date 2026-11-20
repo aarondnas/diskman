@@ -329,7 +329,7 @@
           <span class="tags">{@render label(row)}</span>
           <span class="size">
             {#if row.kind === 'blocked'}
-              {t(`issues.objects.${row.issue.object}`)}{#if row.size} · {formatBytes(row.size)}{/if}
+              {t(`issues.objects.${row.issue.object}`)}{#if row.size}{' · '}{formatBytes(row.size)}{/if}
             {:else if row.kind === 'move_dir'}
               {t('preview.files', { count: row.files, n: formatCount(row.files) })} · {formatBytes(row.size)}
             {:else if !row.kind.endsWith('_dir')}

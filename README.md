@@ -48,8 +48,8 @@ npm run tauri build  # short: npm run bundle
 
 The output ends up in `src-tauri/target/release/bundle/`:
 
-- Windows: `nsis/Diskman_0.1.0_x64-setup.exe` and `msi/Diskman_0.1.0_x64_en-US.msi`
-- Linux: `deb/Diskman_0.1.0_amd64.deb`, `rpm/Diskman-0.1.0-1.x86_64.rpm` and `appimage/Diskman_0.1.0_amd64.AppImage`
+- Windows: `nsis/Diskman_0.1.1_x64-setup.exe` and `msi/Diskman_0.1.1_x64_en-US.msi`
+- Linux: `deb/Diskman_0.1.1_amd64.deb`, `rpm/Diskman-0.1.1-1.x86_64.rpm` and `appimage/Diskman_0.1.1_amd64.AppImage`
 
 Checks (the CI runs the same on Windows and Linux):
 
@@ -64,7 +64,7 @@ cargo test                     # backend tests
 ## Continuous integration and releases
 
 - [`.github/workflows/ci.yml`](.github/workflows/ci.yml) checks every push and pull request on Windows and Linux.
-- [`.github/workflows/release.yml`](.github/workflows/release.yml) builds all installers when a version tag is pushed (`git tag v0.1.0 && git push origin v0.1.0`) and attaches them to a draft release. Keep the version equal in `package.json`, `src-tauri/Cargo.toml` and `src-tauri/tauri.conf.json`.
+- [`.github/workflows/release.yml`](.github/workflows/release.yml) builds all installers when a version tag is pushed (`git tag v0.1.1 && git push origin v0.1.1`) and attaches them to a draft release. Keep the version equal in `package.json`, `src-tauri/Cargo.toml` and `src-tauri/tauri.conf.json`.
 
 ## Project structure
 

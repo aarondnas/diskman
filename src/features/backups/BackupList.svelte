@@ -207,7 +207,7 @@
             <span class="sr">{t('list.runStats')}: </span>{formatElapsed(
               job.started_at ? jobs.now - Date.parse(job.started_at) : 0,
               true,
-            )}{#if job.total_bytes} · {t('run.of', { done: formatBytes(job.done_bytes), total: formatBytes(job.total_bytes) })}{/if}{#if job.error_count} · {t('activity.errors', { count: job.error_count, n: formatCount(job.error_count) })}{/if}
+            )}{#if job.total_bytes}{' · '}{t('run.of', { done: formatBytes(job.done_bytes), total: formatBytes(job.total_bytes) })}{/if}{#if job.error_count}{' · '}{t('activity.errors', { count: job.error_count, n: formatCount(job.error_count) })}{/if}
           </span>
         {:else if showCheck && chk.loading}
           <span class="stats live">
@@ -505,7 +505,9 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     line-clamp: 2;
-    flex: 1;
+    /* A line of its own: with a basis of 0 the stats below (flex-basis 100%) would share its line
+       and squeeze it to no width at all */
+    flex: 1 1 100%;
     min-width: 0;
     font-size: 12px;
     color: var(--muted);
