@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "app": {
+    "windows": [
+      {
+        "title": "Diskman",
+        "width": 1200,
+        "height": 820,
+        "minWidth": 820,
+        "minHeight": 560,
+        "center": true,
+        "theme": "Dark",
+        "decorations": false,
+        "create": false
+      }
+    ]
+  },
+  "bundle": {
+    "targets": ["nsis", "msi"],
+    "windows": {
+      "nsis": {
+        "installerHooks": "windows/installer-hooks.nsh",
+        "languages": ["English", "German", "French", "Spanish", "Italian", "Dutch", "Portuguese", "PortugueseBR"],
+        "displayLanguageSelector": false
+      }
+    }
+  }
+}

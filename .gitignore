@@ -1,0 +1,8 @@
+node_modules/
+dist/
+src-tauri/target/
+src-tauri/gen/
+
+# The signing key of the updater: never in the repository (it lives with the maintainer and in
+# the GitHub secrets, see .github/workflows/release.yml)
+*.key

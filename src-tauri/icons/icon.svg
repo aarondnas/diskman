@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" shape-rendering="crispEdges">
+  <!-- Diskman: server rack with three units as 16 x 16 pixel art.
+       Cabinet and drive slots #2b3440, unit fronts #8d97a3, status lights #f2b84b (amber).
+       The app icons (PNG, ICO) are generated pixel-exactly from the same grid with hard edges
+       (nearest neighbor), so the blocks stay sharp at every size. -->
+  <path fill="#2b3440" d="M2 0h12v1H2zM1 1h14v1H1zM1 2h2v11H1zM13 2h2v11H13zM4 3h3v1H4zM3 5h10v1H3zM4 7h3v1H4zM3 9h10v1H3zM4 11h3v1H4zM1 13h14v1H1zM2 14h2v2H2zM12 14h2v2H12z"/>
+  <path fill="#8d97a3" d="M3 2h10v1H3zM3 3h1v1H3zM7 3h1v1H7zM12 3h1v1H12zM3 4h10v1H3zM3 6h10v1H3zM3 7h1v1H3zM7 7h1v1H7zM12 7h1v1H12zM3 8h10v1H3zM3 10h10v1H3zM3 11h1v1H3zM7 11h1v1H7zM12 11h1v1H12zM3 12h10v1H3z"/>
+  <path fill="#f2b84b" d="M8 3h4v1H8zM8 7h4v1H8zM8 11h4v1H8z"/>
+</svg>

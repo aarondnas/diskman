@@ -1,0 +1,13 @@
+# Text files are stored with LF in the repository and checked out with LF on every system, so a
+# checkout on Windows and one on Linux are byte for byte the same (rustfmt and the shell expect LF;
+# the Windows tools handle it).
+* text=auto eol=lf
+
+# Shell scripts must keep LF, or they fail on Linux
+*.sh text eol=lf
+
+# Binary files: never touched
+*.png binary
+*.ico binary
+*.icns binary
+*.db binary
